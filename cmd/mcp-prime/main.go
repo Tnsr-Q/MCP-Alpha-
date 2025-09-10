@@ -32,7 +32,7 @@ var (
 			stdioServerConfig := ghmcp.StdioServerConfig{
 				Version:              version,
 				EnabledToolsets:      []string{"repository"},
-				DynamicToolsets:      false,
+				DynamicToolsets:      true,
 				ReadOnly:             false,
 				ExportTranslations:   viper.GetBool("export-translations"),
 				EnableCommandLogging: viper.GetBool("enable-command-logging"),
